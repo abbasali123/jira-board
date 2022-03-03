@@ -16,11 +16,11 @@ export class TasksAdapter implements TaskInterface {
 
     const tasksData = [
       {
-        id: 1,
+        _id: 1,
         title: "First Task",
       },
       {
-        id: 2,
+        _id: 2,
         title: "Second Task",
       },
     ];
