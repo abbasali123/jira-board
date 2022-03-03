@@ -48,6 +48,8 @@
     "baseUrl": "./src" /* Base directory to resolve non-absolute module names. */,
     "paths": {
       "@schema/*": ["./schema/*"],
+      "@models/*": ["./models/*"],
+      "@helpers/*": ["./helpers/*"],
       "@usecases/*": ["./application/usecases/*"],
       "@interfaces/*": ["./application/interfaces/*"],
       "@adapters/*": ["./adapters/*"],
