@@ -1,0 +1,79 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@dependencies": [
+        "./dependencies/index.ts"
+      ],
+      "@helpers/*": [
+        "../../helpers/*"
+      ],
+      "@models/*": [
+        "../../models/*"
+      ],
+      "@useCases/*": [
+        "../../application/useCases/*"
+      ],
+      "@interfaces/*": [
+        "../../application/interfaces/*"
+      ],
+      "@adapters/*": [
+        "../../adapters/*"
+      ],
+      "@external/*": [
+        "../../external/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/constants/*": [
+        "src/constants/*"
+      ],
+      "@/contexts/*": [
+        "src/contexts/*"
+      ],
+      "@/hooks/*": [
+        "src/hooks/*"
+      ],
+      "@/styles/*": [
+        "src/styles/*"
+      ],
+      "@/utils/*": [
+        "src/utils/*"
+      ]
+    },
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "jsx": "preserve",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "incremental": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    ".next"
+  ]
+}
